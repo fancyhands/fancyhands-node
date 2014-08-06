@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Fancy Hands Javascript Toolkit</title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+	<h1>Custom Requests</h1>
+	<h2>Create</h2>
+	<form name="request_form" method="POST" action="/create_request">
+		<label>Title</label>
+		<input name="title" required />
+		
+		<label>Description</label>
+		<textarea name="description" required></textarea>
+		
+		<label>Bid</label>
+		<input name="bid" type="number" step="0.01" required />
+		
+		<label>Expiration Date (ISO Format)</label>
+		<input name="expiration_date" />
+
+		<label>Custom Fields (optional)</label>
+		<textarea name="custom_fields"></textarea>
+		
+		<button>Submit</button>
+	</form>
+
+	<hr>
+	
+	<h2>Get</h2>
+	<form name="fetch_requests" method="GET" action="/fetch_requests">
+		<label>Key</label>
+		<input name="key" />
+		
+		<label>Status</label>
+		<input name="status" />
+		
+		<label>Cursor</label>
+		<input name="cursor" />
+
+		<button>Submit</button>
+	</form>
+
+	<hr>
+
+	<h2>Cancel</h2>
+	<form name="cancel_request" method="POST" action="/cancel_request">
+		<label>Key</label>
+		<input name="key" required />
+
+		<button>Submit</button>
+	</form>
+
+	<hr>
+
+	<h1>Call Requests</h1>
+	<h2>Create</h2>
+	<form name="call_request" method="POST" action="/create_call">
+		<label>Phone number</label>
+		<input name="phone_number" required />
+
+		<label>Conversation</label>
+		<textarea name="conversation"></textarea>
+
+		<button>Submit</button>
+	</form>
+
+	<hr>
+
+	<h2>Get</h2>
+	<form name="list_calls" method="POST" action="/fetch_calls">
+		<label>Key</label>
+		<input name="key" />
+		
+		<label>Status</label>
+		<input name="status" />
+		
+		<label>Cursor</label>
+		<input name="cursor" />
+
+		<button>Submit</button>
+	</form>
+
+	<script src="/js/main.js"></script>
+
+</body>
+</html>
