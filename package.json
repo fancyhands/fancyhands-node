@@ -1,5 +1,5 @@
 {
-  "name": "fancyhand-node",
+  "name": "fancyhands-node",
   "description": "A Fancy Hands API wrapper for Node JS",
   "version": "0.0.1",
   "private": true,
