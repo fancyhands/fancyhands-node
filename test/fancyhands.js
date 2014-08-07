@@ -4,9 +4,9 @@ var fancyhands = require('../index').fancyhands;
 console.log(fancyhands)
 
 describe('fancyhands', function() {
-	describe('#haha()', function() {
-		it('Should return true :)', function() {
-			fancyhands.haha().should.equal(true);
+	describe('#echo()', function() {
+		it('Should return echo something :)', function() {
+			fancyhands.echo()
 		})
 	})
 })
