@@ -1,19 +1,27 @@
-fancyhands-javascript
+Node wrapper for Fancyhands's API
 =====================
 
-A Javascript toolkit for working with the Fancyhands API
+For more information visit the [Fancyhands API Docs](https://github.com/fancyhands/api)
 
 
 #####Installation
 If you don't have node installed, get it at [nodejs.org](http://nodejs.org/download/) 
 
 Then run:
-`npm install`
+`npm install fancyhands-node`
 
-#####Setup
+#####Getting your Key and Secret
 Go to the [Fancy Hands API site](www.fancyhands.com/api) to get your OAuth credentials.
-Once you have your Key and Secret, go to the first 2 lines server.js and put in your credentials.
 
-When that is setup, go into the terminal and run `npm start`. Browse to http://localhost:5000 and you should be all set!
+#####Example
+```
+var FH = require('fancyhands-node').fancyhands
+FH.config('YOUR_API_KEY', 'YOUR_API_SECRET')
+
+FH.post('/api/v1/echo', {}, function(data) {
+    console.log(data)
+})
+
+```
 
  
