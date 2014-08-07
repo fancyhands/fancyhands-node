@@ -20,7 +20,7 @@ describe('fancyhands', function() {
 		it('Should create a call and return request data', function(done) {
 			fancyhands.create_call(test_data.create_call.phone, test_data.create_call.conversation, function(data) {
 				console.log(data)
-				// JSON.parse(data).should.have.property('test')
+				JSON.parse(data).should.have.property('date_updated')
 				done();
 			})
 		})
