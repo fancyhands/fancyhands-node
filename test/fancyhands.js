@@ -19,19 +19,18 @@ describe('fancyhands', function() {
 	describe('#create_call()', function() {
 		it('Should create a call and return request data', function(done) {
 			fancyhands.create_call(test_data.create_call, function(data) {
-				console.log(data)
-				data.should.have.property('date_updated')
+				JSON.parse(data).should.have.property('date_updated')
 				done();
 			})
 		})
 	})
 
-	// describe('#create_custom()', function() {
-	// 	it('Should create a custom request and return request data', function(done) {
-	// 		fancyhands.create_custom(test_data.create_custom, function(data) {
-	// 			JSON.parse(data).should.have.property('date_updated')
-	// 			done();
-	// 		})
-	// 	})
-	// })
+	describe('#create_custom()', function() {
+		it('Should create a custom request and return request data', function(done) {
+			fancyhands.create_custom(test_data.create_custom, function(data) {
+				JSON.parse(data).should.have.property('date_updated')
+				done();
+			})
+		})
+	})
 })

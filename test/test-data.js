@@ -1,9 +1,3 @@
-
-var date = new Date();
-var tomorrow = new Date(date.getTime() + 24 * 60 * 60 * 1000);
-var expiration_date = tomorrow.toISOString();
-
-
 module.exports = {
 
     create_call: {
@@ -22,7 +16,7 @@ module.exports = {
         "title": "this is the title",
         "description": "this is the body",
         "bid": 2,
-        "expiration_date": expiration_date,
+        "expiration_date": new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString(),
         "test": true
     }
 }
