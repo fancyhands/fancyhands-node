@@ -35,7 +35,25 @@ We'll echo back whatever params you send. Use to test your API key and secret.
 Specifically for making phone calls and getting structured data back. Super fast!
 
 [**.get_call(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Call)  
-Specifically for making phone calls and getting structured data back. Super fast!
+Returns list of created calls
+
+[**.create_custom(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Custom)  
+Make a request and get customized structured data back.
+
+[**.get_custom(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Custom)  
+Returns list of created custom requests
+
+[**.create_standard(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
+Make a request and get freeform data back.
+
+[**.get_standard(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
+Return list of created standard requests.
+
+[**.cancel(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Cancel)  
+Cancel a request before you get billed for it.
+
+[**.send_message(** *<params | Object>, \<callback | Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Messages)  
+Send a message to the assistant working on a task
 
 **.post(** *\<url\>, \<params | Object\>, \<callback | Function\>* **)**  
 Manual POST to Fancyhands. Can use any API method.
