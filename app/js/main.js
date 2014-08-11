@@ -1,1 +1,0 @@
-console.log('Thanks for using the Fancy Hands API!');
