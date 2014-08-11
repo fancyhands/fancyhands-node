@@ -30,6 +30,7 @@ describe('fancyhands', function() {
 			fancyhands.create_custom(test_data.create_custom, function(data) {
 				JSON.parse(data).should.have.property('date_updated')
 				done();
+				
 			})
 		})
 	})
