@@ -7,14 +7,14 @@ var test_data = require('../test/test-data');
 fancyhands.config('PuREN1kznQ4UyWI', 'dzvNP3hg0idkb0x')
 
 describe('fancyhands', function() {
-	// describe('#echo()', function() {
-	// 	it('Should echo something :) ', function(done) {
-	// 		fancyhands.echo({'test': 'test'}, function(data) {
-	// 			JSON.parse(data).should.have.property('test')
-	// 			done();
-	// 		})
-	// 	})
-	// });
+	describe('#echo()', function() {
+		it('Should echo something :) ', function(done) {
+			fancyhands.echo({'test': 'test'}, function(data) {
+				JSON.parse(data).should.have.property('test')
+				done();
+			})
+		})
+	});
 
 	describe('#create_call()', function() {
 		it('Should create a call and return request data', function(done) {
