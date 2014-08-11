@@ -9,7 +9,6 @@
     "url": "git://github.com/fancyhands/fancyhands-node.git"
   },
   "dependencies": {
-    "lodash": "^2.4.1",
     "oauth": "0.9.10"
   },
   "devDependencies": {
