@@ -20,9 +20,16 @@ Go to the [Fancy Hands API site](www.fancyhands.com/api) to get your OAuth crede
 var FH = require('fancyhands-node').fancyhands;
 FH.config('YOUR_API_KEY', 'YOUR_API_SECRET');
 
-FH.post('/api/v1/echo', { hello: 'world' }, function(data) {
+// Create a Standard Request
+var request = {
+    title: 'Sample Request',
+    description: 'Do something awesome for me!',
+    bid: 3,
+    expiration_date: new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString(); // tomorrow
+};
+
+FH.standard_request(request, function(data) {
     console.log(data)
-    // {hello: 'world'}
 });
 
 ```
