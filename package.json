@@ -1,21 +1,22 @@
 {
-    "name": "fancyhands-node",
-    "description": "A Fancy Hands API wrapper for Node JS",
-    "version": "0.0.1",
-    "private": false,
-    "author": "Fancyhands <orry@fancyhands.com>",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/fancyhands/fancyhands-node.git"
-    },
-    "dependencies": {
-        "oauth": "0.9.10"
-    },
-    "devDependencies": {
-        "mocha": "~1.18.0",
-        "chai": "~1.8.0"
-    },
-    "scripts": {
-        "test": "mocha"
-    }
+  "name": "fancyhands-node",
+  "description": "A Fancy Hands API wrapper for Node JS",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Fancyhands <orry@fancyhands.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fancyhands/fancyhands-node.git"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "oauth": "0.9.10"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.0",
+    "chai": "~1.8.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }
