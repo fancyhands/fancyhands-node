@@ -28,7 +28,7 @@ var request = {
     expiration_date: new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString(); // tomorrow
 };
 
-FH.standard_request(request, function(data) {
+FH.standard_request_create(request).then(function(data) {
     console.log(data)
 });
 
