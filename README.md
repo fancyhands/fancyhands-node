@@ -16,7 +16,7 @@ npm install fancyhands-node
 Go to the [Fancy Hands API site](www.fancyhands.com/api) to get your OAuth credentials.
 
 ##Example
-```
+```javascript
 var FH = require('fancyhands-node').fancyhands;
 FH.config('YOUR_API_KEY', 'YOUR_API_SECRET');
 
