@@ -9,11 +9,13 @@
     "url": "git://github.com/fancyhands/fancyhands-node.git"
   },
   "dependencies": {
-    "oauth": "0.9.10"
+    "oauth": "0.9.10",
+    "q": "1.0.1"
   },
   "devDependencies": {
-    "mocha": "~1.18.0",
-    "chai": "~1.8.0"
+    "chai": "~1.8.0",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "~1.18.0"
   },
   "scripts": {
     "test": "mocha"
