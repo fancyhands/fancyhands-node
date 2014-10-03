@@ -87,10 +87,10 @@ his method allows you to delete a previously purchased number, you will no longe
 
 
 #### Outgoing Calls
-[**FH.outgoing_call_create(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Call)  
+[**FH.outgoing_call_create(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Outgoing)  
 Specifically for making phone calls and getting structured data back. Super fast!
 
-[**FH.outgoing_call_get(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Call)  
+[**FH.outgoing_call_get(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Outgoing)  
 Returns list of created calls
 
 
