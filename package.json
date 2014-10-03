@@ -1,7 +1,7 @@
 {
   "name": "fancyhands-node",
   "description": "A Fancy Hands API wrapper for Node JS",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "private": false,
   "author": "Fancyhands <orry@fancyhands.com>",
   "repository": {
