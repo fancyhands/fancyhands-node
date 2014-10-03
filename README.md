@@ -38,6 +38,7 @@ FH.standard_request_create(request).then(function(data) {
 [**.echo(** *\<params Object | String\>, \<callback Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.echo.Echo)  
 We'll echo back whatever params you send. Use to test your API key and secret.
 
+
 [**.create_call(** *\<params Object\>, \<callback Function\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.call.Call)  
 Specifically for making phone calls and getting structured data back. Super fast!
 
