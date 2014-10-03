@@ -61,28 +61,28 @@ We'll echo back whatever params you send. Use to test your API key and secret.
 
 
 #### Incoming Calls
-**FH.incoming_call_create(** *\<params Object\>* **)**
+**FH.incoming_call_create(** *\<params Object\>* **)**  
 Allows you to create a new Incoming Call Object, with custom built script for our assistants to read.
 
-**FH.incoming_call_get(** *\<params Object\>* **)**
+**FH.incoming_call_get(** *\<params Object\>* **)**  
 Retrieves a list or specific Incoming call objects
 
-**FH.incoming_call_update(** *\<params Object\>* **)**
+**FH.incoming_call_update(** *\<params Object\>* **)**  
 Updates an Incoming call object
 
-**FH.incoming_call_delete(** *\<params Object\>* **)**
+**FH.incoming_call_delete(** *\<params Object\>* **)**  
 Deletes an Incoming call object
 
-**FH.incoming_call_history(** *\<params Object\>* **)**
+**FH.incoming_call_history(** *\<params Object\>* **)**  
 Gets a list of all calls made on an Incoming call object
 
-**FH.number_search(** *\<params Object\>* **)**
+**FH.number_search(** *\<params Object\>* **)**  
 Search for an available phone number to buy and returns a list of them
 
-**FH.number_buy(** *\<params Object\>* **)**
+**FH.number_buy(** *\<params Object\>* **)**  
 This method allows you to purchase a phone number that will be used as your incoming call display number.
 
-**FH.number_delete(** *\<params Object\>* **)**
+**FH.number_delete(** *\<params Object\>* **)**  
 his method allows you to delete a previously purchased number, you will no longer be billed for it.
 
 
@@ -105,14 +105,14 @@ Returns list of created custom requests
 Cancel a request before you get billed for it.
 
 #### Standard Requests
-[**.standard_request_create(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
+[**FH.standard_request_create(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
 Make a request and get freeform data back.
 
-[**.standard_request_get(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
+[**FH.standard_request_get(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Standard)  
 Return list of created standard requests.
 
 #### Messages
-[**.message_send(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Messages)  
+[**FH.message_send(** *\<params Object\>* **)**](https://github.com/fancyhands/api/wiki/fancyhands.request.Messages)  
 Send a message to the assistant working on a task
 
 
