@@ -1,9 +1,9 @@
 {
   "name": "fancyhands-node",
   "description": "A Fancy Hands API wrapper for Node JS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
-  "author": "Fancyhands <orry@fancyhands.com>",
+  "author": "Ted Roden <tedroden@fancyhands.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/fancyhands/fancyhands-node.git"
