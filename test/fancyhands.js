@@ -215,6 +215,23 @@ describe('fancyhands', function() {
 					done();
 				},
 				function(err) {
+					console.log(err)
+					done(err)
+				})
+			;
+		})
+	})
+
+	describe('#standard_request_create', function() {
+		it('Should create a standard request', function(done) {
+			fancyhands.standard_request_create(test_data.create_custom)
+				.then(function(data) {
+					console.log(data)
+					JSON.parse(data).should.have.property('date_updated')
+					done();
+				},
+				function(err) {
+					console.log(err)
 					done(err)
 				})
 			;
