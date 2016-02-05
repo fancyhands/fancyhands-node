@@ -33,9 +33,11 @@ var request = {
 // The method returns a promise. Use the 'then' method to pass in response and error handlers.
 FH.standard_request_create(request)
 	.then(function(request) {
+	
 		// print out what we got
 		console.log("Success! Request created");		
 		console.log(request);
+		
 		// send a message to this request...
 		FH.message_send({ key: request.key, message: "And one more thing..." })
 			.then(function(data) {
