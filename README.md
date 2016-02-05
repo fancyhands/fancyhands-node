@@ -9,7 +9,7 @@ If you don't have node installed, get it at [nodejs.org](http://nodejs.org/downl
 
 Then run:
 ```
-npm install fancyhands-node
+npm install fancyhands-node --save
 ```
 
 ##Getting your Key and Secret
