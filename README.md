@@ -21,6 +21,7 @@ var FH = require('fancyhands-node').fancyhands;
 
 // Configuration
 FH.config('YOUR_API_KEY', 'YOUR_API_SECRET');
+
 // Create a Standard Request
 var request = {
 	title: 'Test Request, do not claim!',
