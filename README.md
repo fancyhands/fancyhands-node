@@ -1,4 +1,4 @@
-Node wrapper for Fancyhands's API
+Node wrapper for Fancyhands' API
 =====================
 
 For more information visit the [Fancyhands API Docs](https://github.com/fancyhands/api)
