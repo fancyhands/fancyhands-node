@@ -1,4 +1,4 @@
-Node wrapper for Fancyhands's API
+Node wrapper for Fancyhands' API
 =====================
 
 For more information visit the [Fancyhands API Docs](https://github.com/fancyhands/api)
@@ -9,7 +9,7 @@ If you don't have node installed, get it at [nodejs.org](http://nodejs.org/downl
 
 Then run:
 ```
-npm install fancyhands-node
+npm install fancyhands-node --save
 ```
 
 ##Getting your Key and Secret
@@ -24,16 +24,34 @@ FH.config('YOUR_API_KEY', 'YOUR_API_SECRET');
 
 // Create a Standard Request
 var request = {
-    title: 'Sample Request',
-    description: 'Do something awesome for me!',
-    bid: 3,
-    expiration_date: new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString(); // tomorrow
+	title: 'Test Request, do not claim!',
+	description: 'Do not send to support',
+	bid: 3
 };
 
-// Send the request. 
+// Send the request.
 // The method returns a promise. Use the 'then' method to pass in response and error handlers.
-FH.standard_request_create(request).then(function(data) {
-    console.log(data)
+FH.standard_request_create(request)
+	.then(function(request) {
+	
+		// print out what we got
+		console.log("Success! Request created");		
+		console.log(request);
+		
+		// send a message to this request...
+		FH.message_send({ key: request.key, message: "And one more thing..." })
+			.then(function(data) {
+				console.log("Success! Message sent");
+				console.log(data);
+			});
+});
+
+
+FH.standard_request_get().then(function(data) {
+	var requests = data.requests;
+	for(var i = 0; i < requests.length; ++i) {
+		console.log(requests[i].title);
+	}
 });
 
 ```
