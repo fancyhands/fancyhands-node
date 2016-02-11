@@ -46,6 +46,28 @@ module.exports = {
         "description": "this is the body",
         "bid": 2,
         "expiration_date": new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString(),
+		"custom_fields": [
+			{
+				"type": "radio",
+				"required": true,
+				"label": "sky",
+				"description": "what color is the sky?",
+				"options": [
+					"blue",
+					"red"
+				],
+				"order": 0,
+				"field_name": "sky"
+			},
+			{
+				"type": "number",
+				"required": true,
+				"label": "number",
+				"description": "what's your favorite number?",
+				"order": 1,
+				"field_name": "number"
+			}
+		],
         "test": true
     }
 }
